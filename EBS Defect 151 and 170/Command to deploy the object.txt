@@ -1,0 +1,18 @@
+Please execute the steps below to deploy the solution for defect 151 email verbiage. 
+
+
+1. Open Unix, and move package in the XXNBTY_EBS_SEND_EMAIL_PKG.pkb and XXNBTY_EBS_SEND_EMAIL_PKG.pks in the /tnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql and execute the command below. 
+
+
+sqlplus -s USERNAME/PASSWORD
+
+@/tnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_EBS_SEND_EMAIL_PKG.pks
+@/tnbtyi/applmgr/1200/xxnbty/12.0.0/admin/sql/XXNBTY_EBS_SEND_EMAIL_PKG.pkb
+
+
+2. In the Unix move the XXNBTYEBSSENDEMAIL.prog in the /tnbtyi/applmgr/1200/xxnbty/12.0.0/bin and execute the command below to convert the dos2unix file format. 
+
+
+dos2unix XXNBTYEBSSENDEMAIL.prog
+
+
